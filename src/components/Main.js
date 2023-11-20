@@ -72,33 +72,22 @@ function Main() {
                 </section>
 
                 <section id="contato" className="contato">
-                    <h2>Contato:</h2>
 
-                    <h3>Informe seu contato:</h3>
-                    <div className='form-contato'>
-                        <form>
-                            <label htmlFor='name' >Nome: </label>
-                            <input type='text' 
-                                id='name' 
-                                name='name' 
-                                placeholder='Digite seu nome'>
-                            </input>
+                    <h2>Informe seu contato:</h2>
 
-                            <label htmlFor='telefone' >Telefone: </label>
-                            <input type='telefone' 
-                                id='telefone' 
-                                name='telefone' 
-                                placeholder='(xx) xxxxx-xxxx'>
-                            </input>
-
-                            <label htmlFor='name' >Email: </label>
-                            <input type='text' 
-                                id='name' 
-                                name='name' 
-                                placeholder='Digite seu Email'>
-                            </input>
-                        </form>
-                    </div>
+                            <form>
+                                    <div>
+                                    <input type="text" id="name" name="name" placeholder='Digite seu Nome' required />
+                                    </div>
+                                    <div>
+                                    <input type="email" id="email" name="email" placeholder='Digite seu E-mail' required />
+                                    </div>
+                                    <div>
+                                    <input type='telefone' id="telefone" name="telefone" placeholder='(xx) xxxxx-xxxx' required />
+                                    </div>
+                                    <button type="submit">Enviar</button>
+                            </form>
+                    
                 </section>
         </div>
     )
